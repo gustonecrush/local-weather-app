@@ -102,6 +102,10 @@
             alt="Weather Icon"
             class="w-[50px] h-[50px] object-cover"
           />
+          <div class="flex gap-2 flex-1 justify-end">
+            <p>H: {{ Math.round(day.temp.max) }}</p>
+            <p>L: {{ Math.round(day.temp.min) }}</p>
+          </div>
         </div>
       </div>
     </div>
