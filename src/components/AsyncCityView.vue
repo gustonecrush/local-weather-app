@@ -142,6 +142,9 @@ const getWeatherData = async () => {
       hour.currentTime = utc + 1000 * weatherData.data.timezone_offset
     })
 
+    // flciker delay
+    await new Promise((res) => setTimeout(res, 1500))
+
     return weatherData.data
   } catch (err) {
     console.log(err)
